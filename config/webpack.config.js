@@ -24,7 +24,8 @@ const config = {
     new ExtractTextPlugin('style.min.css'),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, '..', 'app/index.html')
-    })
+    }),
+    new webpack.DefinePlugin({DEV})
   ],
 
   target: 'web', // https://webpack.github.io/docs/configuration.html#target

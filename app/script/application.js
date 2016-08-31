@@ -14,7 +14,9 @@ import Clock from 'components/Clock';
 
 import logo from 'images/logo.svg';
 
-refresher(5000 /* ms */);
+if (!DEV) {
+  refresher(5000 /* ms */);
+}
 
 ReactDOM.render(
   (
@@ -26,7 +28,7 @@ ReactDOM.render(
         <Clock timezone="Europe/Zagreb" />
       </Cell>
       <Cell>
-        <Clock timezone="America/Havana" />
+        <Clock timezone="America/Havana" displayName="Cayman Islands" />
       </Cell>
       <Cell rowSpan={2}>
         <Empty />
