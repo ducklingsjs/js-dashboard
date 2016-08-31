@@ -8,6 +8,7 @@ import Dashboard from 'dashboard';
 import Cell from 'components/Cell';
 import Empty from 'components/Empty';
 import Image from 'components/Image';
+import Clock from 'components/Clock';
 
 import logo from 'images/logo.svg';
 
@@ -18,10 +19,10 @@ ReactDOM.render(
         <Image src={logo} />
       </Cell>
       <Cell>
-        <Empty />
+        <Clock />
       </Cell>
       <Cell>
-        <Empty />
+        <Clock timezone="Europe/London" />
       </Cell>
       <Cell rowSpan={2}>
         <Empty />

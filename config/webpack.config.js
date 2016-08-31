@@ -71,6 +71,9 @@ const config = {
       test: /\.scss|\.css$/,
       loader: styleLoader
     }, {
+      test: /\.json$/,
+      loader: 'json-loader'
+    }, {
       test: /\.png|\.svg|\.eot|\.ttf|\.woff$/,
       loader: 'file-loader'
     }]
