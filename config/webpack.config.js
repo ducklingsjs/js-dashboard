@@ -24,7 +24,12 @@ const config = {
     new HtmlWebpackPlugin({
       template: path.join(__dirname, '..', 'app/index.html')
     }),
-    new webpack.DefinePlugin({DEV})
+    new webpack.DefinePlugin({
+      DEV,
+      'process.env': {
+        'NODE_ENV': JSON.stringify('production')
+      }
+    })
   ],
 
   target: 'web', // https://webpack.github.io/docs/configuration.html#target

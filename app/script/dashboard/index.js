@@ -28,9 +28,9 @@ export default class Dashboard extends Component {
       <table cellSpacing={20} className={styles.main}>
         <tbody>
         {
-          map(rowGroups, (colGroups) => {
+          map(rowGroups, (colGroups, index) => {
             return (
-              <tr>
+              <tr key={index}>
                 {
                   map(colGroups, (item) => {
                     return item;
