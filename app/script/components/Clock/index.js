@@ -12,23 +12,31 @@ export default class Dashboard extends Component {
   }
 
   timeTick() {
-    const {timezone} = this.props;
+    const {timezone, displayName} = this.props;
+    let timezoneName;
+
+    if (displayName) {
+      timezoneName = displayName;
+    } else {
+      const timezone = timezone || moment.tz.guess();
+      timezoneName = timezone.split('/')[1];
+    }
 
     this.setState({
-      now: timezone ? moment.tz(timezone) : moment(),
-      currentTimezone: timezone || moment.tz.guess()
+      timezoneName,
+      now: timezone ? moment.tz(timezone) : moment()
     });
   }
 
   render() {
     const {className} = this.props;
-    const {now, currentTimezone} = this.state;
+    const {now, timezoneName} = this.state;
 
     return (
       <div className={classnames(className, styles.main)}>
         <div>{now.format('HH:mm')}</div>
         <div>{now.format('DD/MM/YYYY')}</div>
-        <div>{currentTimezone.split('/')[1]}</div>
+        <div>{timezoneName}</div>
       </div>
     );
   }
