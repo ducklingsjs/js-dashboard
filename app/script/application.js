@@ -31,24 +31,24 @@ ReactDOM.render(
         <Clock timezone="America/Havana" displayName="Cayman Islands" />
       </Cell>
       <Cell rowSpan={2}>
-        <Empty />
+        <Clock timezone="Europe/London" displayName="London" />
       </Cell>
 
       <Cell>
-        <Empty />
+        <Clock timezone="America/New_York" displayName="New York" />
       </Cell>
       <Cell rowSpan={2}>
-        <Empty />
+        <Clock timezone="Asia/Tokyo" displayName="Tokyo" />
       </Cell>
       <Cell>
-        <Empty />
+        <Clock timezone="Australia/Sydney" displayName="Sydney" />
       </Cell>
 
       <Cell>
-        <Empty />
+        <Clock timezone="America/Los_Angeles" displayName="Los Angeles" />
       </Cell>
       <Cell colSpan={2}>
-        <Empty />
+        <Clock timezone="Europe/Ljubljana" displayName="Ljubljana" />
       </Cell>
     </Dashboard>
   ), document.querySelector('.js-app')

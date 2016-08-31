@@ -3,6 +3,7 @@ import moment from 'moment-timezone';
 import classnames from 'classnames';
 
 import styles from './style.scss';
+import themeStyles from 'themes.scss';
 
 export default class Dashboard extends Component {
   componentWillMount() {
@@ -33,10 +34,15 @@ export default class Dashboard extends Component {
     const {now, timezoneName} = this.state;
 
     return (
-      <div className={classnames(className, styles.main)}>
-        <div>{now.format('HH:mm')}</div>
-        <div>{now.format('DD/MM/YYYY')}</div>
-        <div>{timezoneName}</div>
+      <div className={classnames(className, styles.main, themeStyles.purpleMain)}>
+        <div className={styles.content}>
+          <div className={styles.weekDay}>{now.format('dddd')}</div>
+          <div className={styles.time}>{now.format('HH:mm')}</div>
+          <div className={styles.date}>{now.format('DD-MM-YYYY')}</div>
+        </div>
+        <div className={classnames(styles.footer, themeStyles.purpleFooter)}>
+          <div>{timezoneName}</div>
+        </div>
       </div>
     );
   }

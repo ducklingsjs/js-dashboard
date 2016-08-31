@@ -1,3 +1,14 @@
 $base-white-color: #EEEEEE;
 
+$base-purple-color: #673AB7;
+$base-dark-purple-color: #311B92;
+
+// COMMON
 $primary-background-color: $base-white-color;
+
+$text-light-color: $base-white-color;
+
+// THEMES
+
+$theme-purple-primary: $base-purple-color;
+$theme-purple-secondary: $base-dark-purple-color;

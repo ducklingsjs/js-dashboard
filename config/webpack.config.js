@@ -10,7 +10,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 
 const DEV = process.env.NODE_ENV === 'development';
-let styleLoader = 'css?modules&importLoaders=2&localIdentName=[local]___[hash:base64:5]!postcss!sass';
+let styleLoader = 'css?camelCase&modules&importLoaders=2&localIdentName=[local]___[hash:base64:5]!postcss!sass';
 
 if (DEV) {
   styleLoader = `style!${styleLoader}`;

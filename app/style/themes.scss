@@ -1,0 +1,13 @@
+@import '~colors.scss';
+
+.purple {
+  &-main {
+    background-color: $theme-purple-primary;
+    color: $text-light-color;
+  }
+
+  &-footer {
+    background-color: $theme-purple-secondary;
+    color: $text-light-color;
+  }
+}
