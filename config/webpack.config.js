@@ -2,7 +2,6 @@
 
 // Webpack and node related dependencies
 const path = require('path');
-const fs = require('fs');
 const webpack = require('webpack');
 
 // Plugins and modules
@@ -87,11 +86,6 @@ if (DEV) {
   config.entry.app.push('webpack/hot/dev-server');
 } else {
   config.plugins.push(new webpack.optimize.UglifyJsPlugin({minimize: true}));
-
-  fs.writeFileSync(
-    path.join(__dirname, '../dist', 'version.txt'),
-    `${Date.now()}`
-  );
 }
 
 module.exports = config;
