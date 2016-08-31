@@ -5,40 +5,43 @@ import 'application.scss';
 
 import Dashboard from 'dashboard';
 
-import Cell from '_components/Cell';
-import Dummy from '_components/Dummy';
+import Cell from 'components/Cell';
+import Empty from 'components/Empty';
+import Image from 'components/Image';
+
+import logo from 'images/logo.svg';
 
 ReactDOM.render(
   (
     <Dashboard columns={4} rows={3}>
       <Cell>
-        <Dummy />
+        <Image src={logo} />
       </Cell>
       <Cell>
-        <Dummy />
+        <Empty />
       </Cell>
       <Cell>
-        <Dummy />
+        <Empty />
       </Cell>
       <Cell rowSpan={2}>
-        <Dummy />
+        <Empty />
       </Cell>
 
       <Cell>
-        <Dummy />
+        <Empty />
       </Cell>
       <Cell rowSpan={2}>
-        <Dummy />
+        <Empty />
       </Cell>
       <Cell>
-        <Dummy />
+        <Empty />
       </Cell>
 
       <Cell>
-        <Dummy />
+        <Empty />
       </Cell>
       <Cell colSpan={2}>
-        <Dummy />
+        <Empty />
       </Cell>
     </Dashboard>
   ), document.querySelector('.js-app')

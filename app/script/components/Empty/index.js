@@ -8,7 +8,7 @@ export default class Dashboard extends Component {
     const {className} = this.props;
 
     return (
-      <div className={classnames(className, styles.main)}>Hello world.</div>
+      <div className={classnames(className, styles.main)}>I'm empty!</div>
     );
   }
 }

@@ -43,7 +43,8 @@ const config = {
   resolve: {
     root: [
       path.join(__dirname, '..', 'app/script'),
-      path.join(__dirname, '..', 'app/style')
+      path.join(__dirname, '..', 'app/style'),
+      path.join(__dirname, '..', 'app/assets')
     ],
     modulesDirectories: [
       'node_modules'
@@ -54,7 +55,7 @@ const config = {
 
   sassLoader: {
     includePaths: [
-      path.resolve(__dirname, '..', 'app/assets')
+      path.resolve(__dirname, '..', 'app/style')
     ]
   },
 
