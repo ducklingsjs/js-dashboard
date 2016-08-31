@@ -15,7 +15,7 @@ import Clock from 'components/Clock';
 import logo from 'images/logo.svg';
 
 if (!DEV) {
-  refresher(5000 /* ms */);
+  refresher(10000 /* ms */);
 }
 
 ReactDOM.render(
