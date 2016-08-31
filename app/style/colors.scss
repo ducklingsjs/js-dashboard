@@ -1,7 +1,27 @@
+
+// COLOR DEFINITIONS
 $base-white-color: #EEEEEE;
 
 $base-purple-color: #673AB7;
 $base-dark-purple-color: #311B92;
+
+$base-red-color: #F44336;
+$base-dark-red-color: #B71C1C;
+
+$base-blue-color: #1976D2;
+$base-dark-blue-color: #0D47A1;
+
+$base-orange-color: #F57C00;
+$base-dark-orange-color: #E65100;
+
+$base-teal-color: #009688;
+$base-dark-teal-color: #004D40;
+
+$base-green-color: #4CAF50;
+$base-dark-green-color: #1B5E20;
+
+$base-grey-color: #607D8B;
+$base-dark-grey-color: #263238;
 
 // COMMON
 $primary-background-color: $base-white-color;
@@ -9,6 +29,23 @@ $primary-background-color: $base-white-color;
 $text-light-color: $base-white-color;
 
 // THEMES
-
 $theme-purple-primary: $base-purple-color;
 $theme-purple-secondary: $base-dark-purple-color;
+
+$theme-red-primary: $base-red-color;
+$theme-red-secondary: $base-dark-red-color;
+
+$theme-blue-primary: $base-blue-color;
+$theme-blue-secondary: $base-dark-blue-color;
+
+$theme-orange-primary: $base-orange-color;
+$theme-orange-secondary: $base-dark-orange-color;
+
+$theme-teal-primary: $base-teal-color;
+$theme-teal-secondary: $base-dark-teal-color;
+
+$theme-green-primary: $base-green-color;
+$theme-green-secondary: $base-dark-green-color;
+
+$theme-grey-primary: $base-grey-color;
+$theme-grey-secondary: $base-dark-grey-color;

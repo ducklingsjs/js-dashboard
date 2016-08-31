@@ -1,13 +1,46 @@
 @import '~colors.scss';
 
-.purple {
-  &-main {
-    background-color: $theme-purple-primary;
-    color: $text-light-color;
-  }
+$themes: (
+  purple: (
+    primary: $theme-purple-primary,
+    secondary: $theme-purple-secondary
+  ),
+  red: (
+    primary: $theme-red-primary,
+    secondary: $theme-red-secondary
+  ),
+  blue: (
+    primary: $theme-blue-primary,
+    secondary: $theme-blue-secondary
+  ),
+  orange: (
+    primary: $theme-orange-primary,
+    secondary: $theme-orange-secondary
+  ),
+  teal: (
+    primary: $theme-teal-primary,
+    secondary: $theme-teal-secondary
+  ),
+  green: (
+    primary: $theme-green-primary,
+    secondary: $theme-green-secondary
+  ),
+  grey: (
+    primary: $theme-grey-primary,
+    secondary: $theme-grey-secondary
+  )
+);
 
-  &-footer {
-    background-color: $theme-purple-secondary;
-    color: $text-light-color;
+@each $name, $theme in $themes {
+  .#{$name} {
+    &-main {
+      background-color: map-get($theme, primary);
+      color: $text-light-color;
+    }
+
+    &-footer {
+      background-color: map-get($theme, secondary);
+      color: $text-light-color;
+    }
   }
 }
