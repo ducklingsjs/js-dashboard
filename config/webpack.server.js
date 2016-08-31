@@ -7,7 +7,7 @@ const config = require('./webpack.config');
 const port = process.env.PORT ? process.env.PORT : 8000;
 
 new WebpackDevServer(webpack(config), Object.assign({
-  contentBase: path.join(__dirname, 'dist'),
+  contentBase: path.join(__dirname, '../dist'),
   hot: true,
   inline: true,
   progress: true,

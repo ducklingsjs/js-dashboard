@@ -5,12 +5,16 @@ import 'application.scss';
 
 import Dashboard from 'dashboard';
 
+import refresher from 'services/refresher';
+
 import Cell from 'components/Cell';
 import Empty from 'components/Empty';
 import Image from 'components/Image';
 import Clock from 'components/Clock';
 
 import logo from 'images/logo.svg';
+
+refresher(5000 /* ms */);
 
 ReactDOM.render(
   (
@@ -19,10 +23,10 @@ ReactDOM.render(
         <Image src={logo} />
       </Cell>
       <Cell>
-        <Clock />
+        <Clock timezone="Europe/Zagreb" />
       </Cell>
       <Cell>
-        <Clock timezone="Europe/London" />
+        <Clock timezone="America/Havana" />
       </Cell>
       <Cell rowSpan={2}>
         <Empty />
