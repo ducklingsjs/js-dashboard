@@ -5,13 +5,24 @@ import classnames from 'classnames';
 import styles from './style.scss';
 
 export default class Dashboard extends Component {
+  componentWillMount() {
+    this.timeTick();
+
+    setInterval(this.timeTick.bind(this), 1000 /* ms */);
+  }
+
+  timeTick() {
+    const {timezone} = this.props;
+
+    this.setState({
+      now: timezone ? moment.tz(timezone) : moment(),
+      currentTimezone: timezone || moment.tz.guess()
+    });
+  }
+
   render() {
-    const {className, timezone} = this.props;
-
-    console.log(timezone);
-
-    const now = timezone ? moment.tz(timezone) : moment();
-    const currentTimezone = timezone || moment.tz.guess();
+    const {className} = this.props;
+    const {now, currentTimezone} = this.state;
 
     return (
       <div className={classnames(className, styles.main)}>
