@@ -4,6 +4,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  position: relative;
 }
 
 %footer {
@@ -14,4 +16,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }

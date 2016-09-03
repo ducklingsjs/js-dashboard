@@ -1,13 +1,16 @@
 @import '~colors.scss';
 @import '~placeholders.scss';
+@import '~themes.scss';
 
 .main {
   @extend %main;
+  @extend %main-purple;
   font-family: 'Roboto Mono', monospace;
 }
 
 .footer {
   @extend %footer;
+  @extend %footer-purple;
 }
 
 .content {

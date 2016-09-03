@@ -11,6 +11,7 @@ import Cell from 'components/Cell';
 import Empty from 'components/Empty';
 import Image from 'components/Image';
 import Clock from 'components/Clock';
+import CodeClimate from 'components/CodeClimate';
 
 import logo from 'images/logo.svg';
 
@@ -31,14 +32,14 @@ ReactDOM.render(
         <Clock timezone="America/Havana" displayName="Cayman Islands" />
       </Cell>
       <Cell rowSpan={2}>
-        <Clock timezone="Europe/London" displayName="London" />
+        <CodeClimate />
       </Cell>
 
       <Cell>
         <Clock timezone="America/New_York" displayName="New York" />
       </Cell>
       <Cell rowSpan={2}>
-        <Clock timezone="Asia/Tokyo" displayName="Tokyo" />
+        <CodeClimate />
       </Cell>
       <Cell>
         <Clock timezone="Australia/Sydney" displayName="Sydney" />

@@ -1,6 +1,7 @@
 
 // COLOR DEFINITIONS
 $base-white-color: #EEEEEE;
+$base-dark-grey-color: #263238;
 
 $base-purple-color: #673AB7;
 $base-dark-purple-color: #311B92;
@@ -27,6 +28,8 @@ $base-dark-grey-color: #263238;
 $primary-background-color: $base-white-color;
 
 $text-light-color: $base-white-color;
+
+$border-dark-grey-color: $base-dark-grey-color;
 
 // THEMES
 $theme-purple-primary: $base-purple-color;

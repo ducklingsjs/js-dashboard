@@ -44,3 +44,15 @@ $themes: (
     }
   }
 }
+
+@each $name, $theme in $themes {
+  %main-#{$name} {
+    background-color: map-get($theme, primary);
+    color: $text-light-color;
+  }
+
+  %footer-#{$name} {
+    background-color: map-get($theme, secondary);
+    color: $text-light-color;
+  }
+}
