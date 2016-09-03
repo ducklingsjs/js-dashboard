@@ -16,6 +16,7 @@ import CodeClimate from 'components/CodeClimate';
 import logo from 'images/logo.svg';
 
 if (!DEV) {
+  console.log('Registred autorefresh!');
   refresher(10000 /* ms */);
 }
 

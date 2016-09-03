@@ -4,7 +4,7 @@
   "description": "Compile JS and SCSS with minifying and uglifying",
   "main": "webpack.config.js",
   "scripts": {
-    "build": "NODE_ENV=production cd ./config; ../node_modules/.bin/webpack --progress && node version.js",
+    "build": "cd ./config; ../node_modules/.bin/webpack --progress && node version.js",
     "start": "NODE_ENV=development node ./config/webpack.server.js",
     "deploy": "npm run build && scp -r dist/* deploy@infinum.club:/www/dashboard"
   },
