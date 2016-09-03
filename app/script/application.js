@@ -17,6 +17,7 @@ import ProductiveTime from 'components/ProductiveTime';
 import logo from 'images/logo.svg';
 
 if (!DEV) {
+  console.log('Registred autorefresh!');
   refresher(10000 /* ms */);
 }
 
@@ -27,7 +28,7 @@ ReactDOM.render(
         <Image src={logo} />
       </Cell>
       <Cell>
-        <Clock timezone="Europe/Zagreb" />
+        <Clock displayName="Zagreb" timezone="Europe/Zagreb" />
       </Cell>
       <Cell>
         <Clock timezone="America/Havana" displayName="Cayman Islands" />

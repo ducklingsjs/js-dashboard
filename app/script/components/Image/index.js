@@ -6,11 +6,14 @@ import styles from './style.scss';
 export default class Image extends Component {
   render() {
     const {className, children, src} = this.props;
+    const style = {
+      backgroundImage: `url(${src})`
+    };
 
     return (
-      <div className={classnames(className, styles.main)}>
-        <img className={styles.image} src={src} />
-      </div>
+      <div
+        className={classnames(className, styles.main)}
+        style={style} />
     );
   }
 }
