@@ -30,7 +30,7 @@ export default class Dashboard extends Component {
         {
           map(rowGroups, (colGroups, index) => {
             return (
-              <tr key={index}>
+              <tr key={index} className={styles.row}>
                 {
                   map(colGroups, (item) => {
                     return item;
