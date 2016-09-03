@@ -12,6 +12,7 @@ import Empty from 'components/Empty';
 import Image from 'components/Image';
 import Clock from 'components/Clock';
 import CodeClimate from 'components/CodeClimate';
+import ProductiveTime from 'components/ProductiveTime';
 
 import logo from 'images/logo.svg';
 
@@ -49,7 +50,7 @@ ReactDOM.render(
         <Clock timezone="America/Los_Angeles" displayName="Los Angeles" />
       </Cell>
       <Cell colSpan={2}>
-        <Clock timezone="Europe/Ljubljana" displayName="Ljubljana" />
+        <ProductiveTime />
       </Cell>
     </Dashboard>
   ), document.querySelector('.js-app')

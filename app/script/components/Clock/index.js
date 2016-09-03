@@ -3,9 +3,8 @@ import moment from 'moment-timezone';
 import classnames from 'classnames';
 
 import styles from './style.scss';
-import themeStyles from 'themes.scss';
 
-export default class Dashboard extends Component {
+export default class Clock extends Component {
   componentWillMount() {
     this.timeTick();
 

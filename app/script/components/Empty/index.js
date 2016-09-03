@@ -3,7 +3,7 @@ import classnames from 'classnames';
 
 import styles from './style.scss';
 
-export default class Dashboard extends Component {
+export default class Empty extends Component {
   render() {
     const {className} = this.props;
 

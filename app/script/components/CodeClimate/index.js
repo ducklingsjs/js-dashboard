@@ -1,11 +1,9 @@
 import React, {Component} from 'react';
-import moment from 'moment-timezone';
 import classnames from 'classnames';
 
 import styles from './style.scss';
-import themeStyles from 'themes.scss';
 
-export default class Dashboard extends Component {
+export default class CodeClimate extends Component {
   componentWillMount() {
     this.setState({
       projects: [{
@@ -48,7 +46,7 @@ export default class Dashboard extends Component {
     });
 
     return (
-      <div className={classnames(className, styles.main, themeStyles.greyMain)}>
+      <div className={classnames(className, styles.main)}>
         <div className={styles.content}>
           <div className={styles.item}>
             <div className={styles.name}>Project</div>
@@ -57,7 +55,7 @@ export default class Dashboard extends Component {
           {projects}
         </div>
         <div className={styles.footer}>
-          <div>Code Climate</div>
+          <div>WIP: Code Climate</div>
         </div>
       </div>
     );

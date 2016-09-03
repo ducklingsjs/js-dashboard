@@ -32,20 +32,6 @@ $themes: (
 );
 
 @each $name, $theme in $themes {
-  .#{$name} {
-    &-main {
-      background-color: map-get($theme, primary);
-      color: $text-light-color;
-    }
-
-    &-footer {
-      background-color: map-get($theme, secondary);
-      color: $text-light-color;
-    }
-  }
-}
-
-@each $name, $theme in $themes {
   %main-#{$name} {
     background-color: map-get($theme, primary);
     color: $text-light-color;
