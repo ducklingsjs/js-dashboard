@@ -42,7 +42,7 @@ const config = {
 
   output: {
     path: path.join(__dirname, '..', 'dist'),
-    filename: 'script.min.js',
+    filename: 'script.min.js?[hash]',
     publicPath: './'
   },
 
