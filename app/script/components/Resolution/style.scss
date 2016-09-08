@@ -1,0 +1,23 @@
+@import '~colors.scss';
+@import '~placeholders.scss';
+@import '~themes.scss';
+
+.main {
+  @extend %main;
+  @extend %main-orange;
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer {
+  @extend %footer;
+  @extend %footer-orange;
+}
+
+.content {
+  padding: 24px;
+}
+
+.item {
+  font-size: 36px;
+  padding: 24px;
+}

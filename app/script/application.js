@@ -13,6 +13,7 @@ import Image from 'components/Image';
 import Clock from 'components/Clock';
 import CodeClimate from 'components/CodeClimate';
 import ProductiveTime from 'components/ProductiveTime';
+import Resolution from 'components/Resolution';
 
 import logo from 'images/logo.svg';
 
@@ -44,7 +45,7 @@ ReactDOM.render(
         <CodeClimate />
       </Cell>
       <Cell>
-        <Clock timezone="Australia/Sydney" displayName="Sydney" />
+        <Resolution />
       </Cell>
 
       <Cell>
