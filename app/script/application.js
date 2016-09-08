@@ -19,7 +19,7 @@ import logo from 'images/logo.svg';
 
 if (!DEV) {
   console.log('Registred autorefresh!');
-  refresher(10000 /* ms */);
+  refresher(1000 /* ms */);
 }
 
 ReactDOM.render(
