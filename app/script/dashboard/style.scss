@@ -2,8 +2,8 @@
 
 .main {
   position: relative;
-  width: 1920px; // FIXME omg lol
-  height: 1080px; // FIXME omg lol
+  width: 1824px; // FIXME omg lol
+  height: 984px; // FIXME omg lol
 
   background: $primary-background-color;
   table-layout: fixed;
@@ -13,5 +13,5 @@
   // 1000px = 1080px - 4 * 20px
   // 4 = num of rows + 1
   // 20px = cellPadding
-  height: calc(1000px / 3);
+  height: calc(904px / 3);
 }

@@ -14,6 +14,7 @@
 }
 
 .content {
+  @extend %content;
   // padding: 24px;
 }
 
