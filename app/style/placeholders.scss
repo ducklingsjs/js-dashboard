@@ -30,3 +30,10 @@
   bottom: 0;
   left: 0;
 }
+
+%ellipsis {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

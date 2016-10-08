@@ -14,6 +14,7 @@ import Image from 'components/Image';
 import Clock from 'components/Clock';
 import CodeClimate from 'components/CodeClimate';
 import Bugsnag from 'components/Bugsnag';
+import Newsletter from 'components/Newsletter';
 import ProductiveTime from 'components/ProductiveTime';
 import Resolution from 'components/Resolution';
 
@@ -41,7 +42,7 @@ ReactDOM.render(
       </Cell>
 
       <Cell>
-        <Clock timezone="America/New_York" displayName="New York" />
+        <Newsletter />
       </Cell>
       <Cell rowSpan={2}>
         <Bugsnag />

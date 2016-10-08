@@ -1,0 +1,56 @@
+@import '~colors.scss';
+@import '~placeholders.scss';
+@import '~themes.scss';
+
+.main {
+  @extend %main;
+  @extend %main-blue;
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer {
+  @extend %footer;
+  @extend %footer-blue;
+}
+
+.content {
+  padding: 24px;
+}
+
+.popular {
+  margin-bottom: 30px;
+}
+
+.infoTitle {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.popularTitle {
+  @extend %ellipsis;
+
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.popularUrl {
+  @extend %ellipsis;
+
+  font-size: 20px;
+  opacity: 0.5;
+}
+
+.info {
+  width: 50%;
+  display: inline-block;
+}
+
+.infoValue {
+  font-size: 36px;
+}
+
+.loading {
+  padding: 20px;
+  font-weight: bold;
+  font-size: 24px;
+}

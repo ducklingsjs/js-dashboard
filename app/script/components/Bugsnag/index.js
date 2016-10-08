@@ -4,7 +4,7 @@ import {sortBy} from 'lodash';
 
 import styles from './style.scss';
 
-const url = process.env.APP_ENV === 'development'
+const url = process.env.APP_ENV !== 'development'
   ? '/bugsnag.json'
   : 'http://localhost:1423/bugsnag/';
 
@@ -73,7 +73,11 @@ export default class Bugsnag extends Component {
             <div className={styles.name}>Project</div>
             <div className={styles.score}>Opened/Total</div>
           </div>
-          {projects}
+          {
+            projects.length
+              ? projects
+              : <div className={styles.loading}>Loading data...</div>
+          }
         </div>
         <div className={styles.footer}>
           <div>Bugsnag</div>
