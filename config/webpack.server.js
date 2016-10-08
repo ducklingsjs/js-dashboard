@@ -1,5 +1,6 @@
 'use strict';
 const path = require('path');
+const fs = require('fs');
 const webpack = require('webpack');
 const WebpackDevServer = require('webpack-dev-server');
 const config = require('./webpack.config');
@@ -7,7 +8,7 @@ const config = require('./webpack.config');
 const port = process.env.PORT ? process.env.PORT : 8000;
 
 new WebpackDevServer(webpack(config), Object.assign({
-  contentBase: path.join(__dirname, '../dist'),
+  contentBase: path.join(__dirname, '../mock'),
   hot: true,
   inline: true,
   progress: true,

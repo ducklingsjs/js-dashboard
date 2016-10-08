@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import 'application.scss';
+import 'babel-polyfill';
 
 import Dashboard from 'dashboard';
 
@@ -12,6 +13,7 @@ import Empty from 'components/Empty';
 import Image from 'components/Image';
 import Clock from 'components/Clock';
 import CodeClimate from 'components/CodeClimate';
+import Bugsnag from 'components/Bugsnag';
 import ProductiveTime from 'components/ProductiveTime';
 import Resolution from 'components/Resolution';
 
@@ -42,7 +44,7 @@ ReactDOM.render(
         <Clock timezone="America/New_York" displayName="New York" />
       </Cell>
       <Cell rowSpan={2}>
-        <CodeClimate />
+        <Bugsnag />
       </Cell>
       <Cell>
         <Resolution />

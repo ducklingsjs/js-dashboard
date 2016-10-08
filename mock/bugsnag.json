@@ -1,0 +1,104 @@
+{
+    "data": [{
+        "id": "4234235",
+        "name": "Foo",
+        "type": "node",
+        "errors": {
+            "resolved": 3,
+            "opened": 1,
+            "total": 4
+        },
+        "icon": "https://app.bugsnag.com/assets/images/frameworks/node.png"
+    }, {
+        "id": "324543654",
+        "name": "Bar",
+        "type": "js",
+        "errors": {
+            "resolved": 7,
+            "opened": 0,
+            "total": 7
+        },
+        "icon": "https://app.bugsnag.com/assets/images/frameworks/js.png"
+    }, {
+        "id": "7354257",
+        "name": "Baz",
+        "type": "js",
+        "errors": {
+            "resolved": 48,
+            "opened": 52,
+            "total": 100
+        },
+        "icon": "https://app.bugsnag.com/assets/images/frameworks/js.png"
+    }, {
+        "id": "8568356426",
+        "name": "FooBar",
+        "type": "js",
+        "errors": {
+            "resolved": 0,
+            "opened": 39,
+            "total": 39
+        },
+        "icon": "https://app.bugsnag.com/assets/images/frameworks/js.png"
+    }, {
+        "id": "236434545",
+        "name": "FooBaz",
+        "type": "js",
+        "errors": {
+            "resolved": 45,
+            "opened": 16,
+            "total": 61
+        },
+        "icon": "https://app.bugsnag.com/assets/images/frameworks/js.png"
+    }, {
+        "id": "785647554",
+        "name": "BazBar",
+        "type": "js",
+        "errors": {
+            "resolved": 0,
+            "opened": 54,
+            "total": 54
+        },
+        "icon": "https://app.bugsnag.com/assets/images/frameworks/js.png"
+    }, {
+        "id": "23463474546",
+        "name": "BarFoo",
+        "type": "js",
+        "errors": {
+            "resolved": 0,
+            "opened": 6,
+            "total": 6
+        },
+        "icon": "https://app.bugsnag.com/assets/images/frameworks/js.png"
+    }, {
+        "id": "3247486756",
+        "name": "BazFoo",
+        "type": "js",
+        "errors": {
+            "resolved": 16,
+            "opened": 4,
+            "total": 20
+        },
+        "icon": "https://app.bugsnag.com/assets/images/frameworks/js.png"
+    }, {
+        "id": "43264556575",
+        "name": "BazBar",
+        "type": "js",
+        "errors": {
+            "resolved": 37,
+            "opened": 40,
+            "total": 77
+        },
+        "icon": "https://app.bugsnag.com/assets/images/frameworks/js.png"
+    }, {
+        "id": "65485467435",
+        "name": "FooBarBaz",
+        "type": "js",
+        "errors": {
+            "resolved": 0,
+            "opened": 7,
+            "total": 7
+        },
+        "icon": "https://app.bugsnag.com/assets/images/frameworks/js.png"
+    }],
+    "time": "2016-10-08T17:18:01.563Z"
+}
