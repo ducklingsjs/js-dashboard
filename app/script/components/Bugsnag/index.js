@@ -4,9 +4,7 @@ import {sortBy} from 'lodash';
 
 import styles from './style.scss';
 
-const url = process.env.APP_ENV !== 'development'
-  ? '/bugsnag.json'
-  : 'http://localhost:1423/bugsnag/';
+const url = `http://${window.location.hostname}:1423/bugsnag/`; // '/bugsnag.json' // mock
 
 export default class Bugsnag extends Component {
   componentWillMount() {

@@ -4,7 +4,7 @@ import classnames from 'classnames';
 
 import styles from './style.scss';
 
-const url = '/goodbits.json';
+const url = `http://${window.location.hostname}/goodbits.json`;
 
 export default class Newsletter extends Component {
   componentWillMount() {
