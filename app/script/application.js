@@ -15,7 +15,7 @@ import Clock from 'components/Clock';
 import CodeClimate from 'components/CodeClimate';
 import Bugsnag from 'components/Bugsnag';
 import Newsletter from 'components/Newsletter';
-import ProductiveTime from 'components/ProductiveTime';
+import Semaphore from 'components/Semaphore';
 import Resolution from 'components/Resolution';
 
 import logo from 'images/logo.svg';
@@ -55,7 +55,7 @@ ReactDOM.render(
         <Clock timezone="America/Los_Angeles" displayName="Los Angeles" />
       </Cell>
       <Cell colSpan={2}>
-        <ProductiveTime />
+        <Semaphore />
       </Cell>
     </Dashboard>
   ), document.querySelector('.js-app')
